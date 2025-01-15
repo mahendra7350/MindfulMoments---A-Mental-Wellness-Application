@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #9333ea;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-gray-800 dark:text-gray-200;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors;
+  }
+}
